@@ -1,13 +1,7 @@
 import java.util.Scanner;
 
 public class CompareStrings {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the first string:");
-        String str1 = sc.nextLine();
-        System.out.println("Enter the second string:");
-        String str2 = sc.nextLine();
-
+    public static void compareAndPrintResult(String str1, String str2) {
         int comparison = compareStrings(str1, str2);
         if (comparison < 0) {
             System.out.println("\"" + str1 + "\" comes before \"" + str2 + "\" in lexicographical order");
@@ -32,5 +26,16 @@ public class CompareStrings {
         }
 
         return len1 - len2;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the first string:");
+        String str1 = sc.nextLine();
+        System.out.println("Enter the second string:");
+        String str2 = sc.nextLine();
+        sc.close();
+
+        compareAndPrintResult(str1, str2);
     }
 }

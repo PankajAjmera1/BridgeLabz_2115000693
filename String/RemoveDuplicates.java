@@ -3,15 +3,15 @@ import java.util.Scanner;
 public class RemoveDuplicates {
     public static String removeDuplicateChars(String str) {
         boolean[] seen = new boolean[256]; // ASCII characters
-        StringBuilder result = new StringBuilder();
+        String result = "";
 
         for (char ch : str.toCharArray()) {
-            if (!seen[ch]) { // ch not appeared before
+            if (!seen[ch]) {
                 seen[ch] = true;
-                result.append(ch);
+                result += ch; 
             }
         }
-        return result.toString();
+        return result;
     }
 
     public static void main(String[] args) {
@@ -21,6 +21,6 @@ public class RemoveDuplicates {
         sc.close();
 
         String result = removeDuplicateChars(input);
-        System.out.println("Removing duplicates... " + result);
+        System.out.println("String after removing duplicates: " + result);
     }
 }

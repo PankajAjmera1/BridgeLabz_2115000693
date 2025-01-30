@@ -2,18 +2,18 @@ import java.util.Scanner;
 
 public class ToggleCase {
     public static String toggleCase(String str) {
-        StringBuilder result = new StringBuilder();
+        String result = "";
 
         for (char ch : str.toCharArray()) {
-            if (Character.isUpperCase(ch)) {
-                result.append(Character.toLowerCase(ch));
-            } else if (Character.isLowerCase(ch)) {
-                result.append(Character.toUpperCase(ch));
+            if (ch >= 'A' && ch <= 'Z') {
+                result += (char) (ch + 32);
+            } else if (ch >= 'a' && ch <= 'z') {
+                result += (char) (ch - 32);
             } else {
-                result.append(ch); 
+                result += ch;
             }
         }
-        return result.toString();
+        return result;
     }
 
     public static void main(String[] args) {
