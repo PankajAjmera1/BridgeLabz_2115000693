@@ -15,7 +15,7 @@
 
 
 ### Class Diagram
-<img src="images/Q2Class_diagram.png" width="500">
+<img src="images/Q2class_diagram.png" width="500">
 
 ### Object Diagram
 <img src="images/Q2Object.png" width="500">
