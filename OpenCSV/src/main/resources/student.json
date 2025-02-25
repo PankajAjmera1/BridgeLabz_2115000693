@@ -1,0 +1,37 @@
+[
+  {
+    "ID": "1",
+    "Name": "Alice",
+    "Age": "21",
+    "Email": "alice@example.com",
+    "Phone": "9876543210"
+  },
+  {
+    "ID": "2",
+    "Name": "Bob",
+    "Age": "22",
+    "Email": "bob@example.com",
+    "Phone": "8765432109"
+  },
+  {
+    "ID": "3",
+    "Name": "Charlie",
+    "Age": "20",
+    "Email": "charlie@example.com",
+    "Phone": "7654321098"
+  },
+  {
+    "ID": "4",
+    "Name": "David",
+    "Age": "23",
+    "Email": "david@example.com",
+    "Phone": "6543210987"
+  },
+  {
+    "ID": "5",
+    "Name": "Emma",
+    "Age": "21",
+    "Email": "emma@example.com",
+    "Phone": "5432109876"
+  }
+]
